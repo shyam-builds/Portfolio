@@ -64,7 +64,6 @@ function Field({
   );
 }
 
-
 export function Contact() {
   const [copied, setCopied] = useState(false);
 
@@ -99,12 +98,12 @@ export function Contact() {
           </h2>
 
           <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">
-            I'm currently open to AI/ML, software development, internship, and
-            entry-level engineering opportunities.
+            I'm currently open to AI/ML, software development, internship, and entry-level
+            engineering opportunities.
           </p>
           <p className="mt-4 max-w-lg text-base leading-relaxed text-muted-foreground">
-            If you're hiring, collaborating, or simply want to talk about AI and
-            software, I'd be happy to connect.
+            If you're hiring, collaborating, or simply want to talk about AI and software, I'd be
+            happy to connect.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3">
@@ -130,28 +129,21 @@ export function Contact() {
           <div className="mt-10 border-t border-border">
             {DETAILS.map((d) => (
               <div key={d.label} className="border-b border-border py-4">
-                <span className="mono-label block text-muted-foreground">
-                  {d.label}
-                </span>
+                <span className="mono-label block text-muted-foreground">{d.label}</span>
                 {d.href ? (
                   <a
                     href={d.href}
-                    {...(d.external
-                      ? { target: "_blank", rel: "noreferrer noopener" }
-                      : {})}
+                    {...(d.external ? { target: "_blank", rel: "noreferrer noopener" } : {})}
                     className="mt-1.5 block text-base text-foreground transition-colors hover:text-accent"
                   >
                     {d.value}
                   </a>
                 ) : (
-                  <span className="mt-1.5 block text-base text-foreground">
-                    {d.value}
-                  </span>
+                  <span className="mt-1.5 block text-base text-foreground">{d.value}</span>
                 )}
               </div>
             ))}
           </div>
-
         </div>
 
         <div className="lg:col-span-5 lg:col-start-8">
@@ -174,9 +166,7 @@ export function Contact() {
               />
             </div>
             <div className="col-span-2 flex flex-wrap items-center justify-between gap-2">
-              <p className="text-xs text-muted-foreground">
-                This opens your default mail client.
-              </p>
+              <p className="text-xs text-muted-foreground">This opens your default mail client.</p>
               <button
                 type="submit"
                 className="group inline-flex h-12 items-center gap-2 rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
@@ -188,7 +178,6 @@ export function Contact() {
               </button>
             </div>
           </form>
-
         </div>
       </div>
     </Section>

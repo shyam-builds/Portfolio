@@ -60,10 +60,7 @@ export function Nav({
             >
               {item.nav}
               {active === item.id && (
-                <span
-                  className="absolute inset-x-3 -bottom-px h-0.5 bg-accent"
-                  aria-hidden
-                />
+                <span className="absolute inset-x-3 -bottom-px h-0.5 bg-accent" aria-hidden />
               )}
             </a>
           ))}

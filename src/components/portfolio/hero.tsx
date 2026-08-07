@@ -8,18 +8,9 @@ function Terminal() {
       <div className="flex items-center gap-3 border-b border-border bg-surface px-3 py-2.5">
         {/* macOS traffic-light controls */}
         <span className="flex items-center gap-1.5" aria-hidden>
-          <span
-            className="h-3 w-3 rounded-full"
-            style={{ backgroundColor: "#FF5F57" }}
-          />
-          <span
-            className="h-3 w-3 rounded-full"
-            style={{ backgroundColor: "#FFBD2E" }}
-          />
-          <span
-            className="h-3 w-3 rounded-full"
-            style={{ backgroundColor: "#28C840" }}
-          />
+          <span className="h-3 w-3 rounded-full" style={{ backgroundColor: "#FF5F57" }} />
+          <span className="h-3 w-3 rounded-full" style={{ backgroundColor: "#FFBD2E" }} />
+          <span className="h-3 w-3 rounded-full" style={{ backgroundColor: "#28C840" }} />
         </span>
         <span className="flex-1 text-center font-mono text-[11px] text-muted-foreground/70 select-none">
           terminal — ghanshyam@workspace
@@ -48,10 +39,7 @@ function Terminal() {
         {/* Blinking cursor */}
         <div className="mt-5 flex items-center gap-1">
           <span className="text-accent">$</span>
-          <span
-            className="inline-block h-[1.1em] w-[7px] animate-pulse bg-accent"
-            aria-hidden
-          />
+          <span className="inline-block h-[1.1em] w-[7px] animate-pulse bg-accent" aria-hidden />
         </div>
       </div>
     </div>
@@ -79,9 +67,7 @@ export function Hero() {
             Singh
           </h1>
 
-          <p className="mt-5 text-lg font-medium text-foreground md:text-xl">
-            {PROFILE.role}
-          </p>
+          <p className="mt-5 text-lg font-medium text-foreground md:text-xl">{PROFILE.role}</p>
 
           <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
             {PROFILE.statement}

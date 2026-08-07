@@ -50,15 +50,11 @@ export function CommandPalette({
           <CommandItem onSelect={() => run(goto("top"))}>Home</CommandItem>
           <CommandItem onSelect={() => run(goto("profile"))}>About</CommandItem>
           <CommandItem onSelect={() => run(goto("work"))}>Selected Work</CommandItem>
-          <CommandItem onSelect={() => run(goto("capabilities"))}>
-            Capabilities
-          </CommandItem>
+          <CommandItem onSelect={() => run(goto("capabilities"))}>Capabilities</CommandItem>
           <CommandItem onSelect={() => run(goto("contact"))}>Contact</CommandItem>
         </CommandGroup>
         <CommandGroup heading="Actions">
-          <CommandItem onSelect={() => run(openUrl(PROFILE.resumeUrl))}>
-            View Resume ↗
-          </CommandItem>
+          <CommandItem onSelect={() => run(openUrl(PROFILE.resumeUrl))}>View Resume ↗</CommandItem>
           <CommandItem
             onSelect={() =>
               run(async () => {
@@ -69,9 +65,7 @@ export function CommandPalette({
           >
             Copy Email
           </CommandItem>
-          <CommandItem onSelect={() => run(openUrl(PROFILE.linkedin))}>
-            Open LinkedIn
-          </CommandItem>
+          <CommandItem onSelect={() => run(openUrl(PROFILE.linkedin))}>Open LinkedIn</CommandItem>
           <CommandItem onSelect={() => run(toggleTheme)}>Toggle Theme</CommandItem>
         </CommandGroup>
       </CommandList>

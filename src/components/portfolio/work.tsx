@@ -61,10 +61,7 @@ function ProjectCard({ project }: { project: Project }) {
       {project.bullets && project.bullets.length > 0 && (
         <ul className="mt-5 max-w-3xl space-y-3 border-l-2 border-border pl-5">
           {project.bullets.map((bullet, i) => (
-            <li
-              key={i}
-              className="flex gap-3 text-[0.9rem] leading-[1.7] text-muted-foreground"
-            >
+            <li key={i} className="flex gap-3 text-[0.9rem] leading-[1.7] text-muted-foreground">
               <span
                 className="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full bg-border-strong"
                 aria-hidden
@@ -97,7 +94,8 @@ export function Work() {
       <div className="max-w-2xl">
         <h2 className="display text-[clamp(2rem,5vw,3.5rem)]">Things I've built.</h2>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          Scalable backend systems and AI-powered applications using multi-agent workflows, Retrieval-Augmented Generation, and computer vision.
+          Scalable backend systems and AI-powered applications using multi-agent workflows,
+          Retrieval-Augmented Generation, and computer vision.
         </p>
       </div>
 

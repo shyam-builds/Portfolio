@@ -6,9 +6,7 @@ export function Profile() {
     <Section id="profile" marker="01" label="Profile" bordered={false} compact>
       <div className="grid gap-8 lg:grid-cols-12 lg:items-baseline lg:gap-16">
         <div className="lg:col-span-5">
-          <h2 className="display text-[clamp(1.6rem,3.2vw,2.25rem)]">
-            Backend Developer
-          </h2>
+          <h2 className="display text-[clamp(1.6rem,3.2vw,2.25rem)]">Backend Developer</h2>
         </div>
 
         <div className="lg:col-span-7">

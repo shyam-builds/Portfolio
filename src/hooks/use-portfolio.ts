@@ -10,8 +10,7 @@ export function useTheme() {
   useEffect(() => {
     const stored = window.localStorage.getItem(THEME_KEY) as Theme | null;
     const initial: Theme =
-      stored ??
-      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      stored ?? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     setThemeState(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
   }, []);

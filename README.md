@@ -69,4 +69,3 @@ Computer vision platform for waste detection and environmental assessment using 
 AI-powered content creation and management platform with modern full-stack architecture.
 
 ---
-
