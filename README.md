@@ -2,9 +2,9 @@
 
 A modern, responsive portfolio showcasing my work as a **Backend Engineer** building scalable software and AI-powered applications.
 
-## Live Demo
+## Live
 
-> https://your-portfolio-url.netlify.app
+> https://ghanshyam-singh.netlify.app/
 
 ---
 
